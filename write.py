@@ -1,7 +1,8 @@
-from turtle import Turtle, Screen
-
+from turtle import Turtle
+import time
 ALIGNMENT = "center"
 FONT = ("Courier", 7, "normal")
+FONT2 = ("Courier", 10, "normal")
 
 
 class Write(Turtle):
@@ -18,5 +19,10 @@ class Write(Turtle):
         self.write(arg=f"{state}", align=ALIGNMENT, font=FONT)
         self.current_score += 1
 
-
+    # def already_chose(self, state):
+    #     self.goto(0, 0)
+    #     self.color("black")
+    #     self.write(arg=f"Already chose {state}", align=ALIGNMENT, font=FONT2)
+    #     time.sleep(1)
+    #     self.clear()
 
